@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preload" href="./styles.css" as="style">
+    <link href="./styles.css" rel="stylesheet">
+
+    <link rel="preload" href="./normalize.css" as="style">
+    <link rel="stylesheet" href="./normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="./img/cookie.svg" type="image/x-icon">
+    
+
+    <title>CookieFactory</title>
+</head>
+<body>
+    <div class="whole-page">
+        <div class=" main-container">
+            <div class="box1">
+                <a href="./index.html">
+                    <img src="./img/cookie.svg" class="icon2">
+                </a>
+            </div>
+            <div class="menu-box">
+                <a href="./ingredients.html" class="header-links">Ingredientes</a>
+                <p class="dividers">|</p>
+                <a href="./formulae.html" class="header-links">Recetas</a>
+                <p class="dividers">|</p>
+                <a href="./simulation.html" class="header-links">Fábrica</a>
+            </div> 
+        </div>
+        <div class="sec-cont-fact">
+            <div class="factmain">
+                <div class="fact-box">
+                    <p>Recetas</p>
+                    <select class="select-receta"></select>
+                    <div class="portionbox">
+                        <p class="porciones">Porciones
+                            <input type="number" id="quantity" name="quantity" value="0" min="0" class="q2">
+                        </p>
+                    </div>
+                    <button id="iniciarSimulacion">Iniciar</button>
+                </div>
+                <div class="ingredientesDiv">
+
+                </div>
+            </div>
+            <div class="factmain">
+                <div class="horno">
+                    <div class="gear">
+                        <div class="tooth"></div>
+                        <div class="tooth"></div>
+                        <div class="tooth"></div>
+                        <div class="tooth"></div>
+                        <div class="tooth"></div>
+                        <div class="tooth"></div>
+                        <div class="tooth"></div>
+                        <div class="tooth"></div>
+                        <div class="shaft"></div>
+                    </div>
+                    <p>AMASADOR</p>
+                    <button>Iniciar Masa</button>
+                </div>
+                <div class="molde">
+                    <p>MOLDE</p>
+                    <button>Moldear</button>
+                </div>
+                <div class="horno">
+                    <p>HORNO</p>
+                    <button>Hornear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="simulation.js"></script>
+</html>

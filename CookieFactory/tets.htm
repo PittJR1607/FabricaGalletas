@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="box1">
+			<div class="inner-box">
+				<h2>Box 1</h2>
+				<p>This is the first box.</p>
+			</div>
+		</section>
+		<section class="box2">
+			<div class="inner-box">
+				<h2>Box 2</h2>
+				<p>This is the second box.</p>
+			</div>
+		</section>
+	</main>
+</body>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  height: 80px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+}
+
+.box1, .box2 {
+  flex-grow: 1;
+  padding: 20px;
+  position: relative;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+}
+
+.box1 {
+  background-color: #0074D9;
+  color: #fff;
+}
+
+.box2 {
+  background-color: #FF4136;
+  color: #fff;
+}
+
+.inner-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  opacity: 0.6;
+  padding: 20px;
+  width: 80%;
+  max-height: 90%;
+  box-sizing: border-box;
+}
+
+.inner-box h2 {
+  margin-top: 0;
+}
+
+.inner-box p {
+  margin-bottom: 0;
+}
+
+
+</style>
+
+</html>

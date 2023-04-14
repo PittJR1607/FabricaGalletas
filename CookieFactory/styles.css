@@ -1,0 +1,528 @@
+:root{
+    --blanco:#ffffff;
+    --negro:#212121;
+    --gris:#757575;
+    --grisClaro: #DFE9F3;
+    --main:  #724000 ;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /*HACK PARA BOX MODEL*/
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after { 
+    box-sizing: inherit;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.bg-img{
+    background-image: url(./img/bg-cookies.jpg) ;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    font-size: 15px; /* 1rem = 10px */
+    font-family: 'Tilt Neon';
+}
+
+
+h1{
+    font-size: 1.8rem;
+}
+
+.titulo{
+    font-family: 'Tilt Neon';
+    padding-left: 20;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--main);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 60px);
+}
+  
+.icon{
+    width: 40px;
+    height: 40px;
+}
+
+.box1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+
+}
+
+.main-container {
+    width: 100% ;
+    height: 50px;
+    padding: 5px;
+    background-color: var(--blanco);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.main-container a{
+    text-decoration: none;
+
+}
+
+.box2{
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    bottom: 0;
+    position: absolute;
+
+}
+
+.secondarybox-bg{
+    background-color: rgba(255,255,255,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+}
+
+.main-buttons{
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: var(--blanco);
+    width: 250px;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #724000;
+    font-size: 2rem;
+}
+
+
+
+
+.main-des{
+    font-family: 'Tilt Neon';
+    font-size: 1.5rem;
+    align-items: center;
+    text-align: center;
+}
+ 
+.icon2{
+    width: 40px;
+    height: 40px;
+}
+
+.header-links{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #724000;
+    font-weight: 500;
+    cursor: pointer;
+    justify-content: center;
+    font-family: 'Tilt Neon';
+}
+
+.menu-box{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    height: fit-content;
+    align-items: center;
+}
+
+.dividers{
+    font-size: 1.2rem;
+    color: #724000;
+    font-weight: 200;
+    font-family: 'Tilt Neon';
+}
+
+.whole-page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+.sec-cont{
+    display: flex;
+    gap: 1px;
+    justify-content: space-between;
+    height: calc(100%-50px);
+}
+
+.box{
+    width: 90%;
+    height: 91.7vh;
+    max-width: 800px;
+    max-height: 91.7vh; /* Cambiar por ajustable */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    justify-content: center;
+}
+
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.box:hover::before{
+    transition: color 0.3 ease-in;
+    transition-duration: 220ms;
+    opacity: 0.5;
+}
+
+
+.ing-inv{
+    background-image: url(./img/warehouse.jpg);
+}
+  
+.ing-add {
+    background-image: url(./img/aisle.jpg);
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.sec-buttons{
+    font-size: 1.5rem;
+    padding: 1rem;
+}   
+
+.text-ing{
+    font-size: 3rem;
+    -webkit-text-stroke: 0.5px var(--main);
+    opacity: 0.7;
+}
+
+.secondarybox-bg-2{
+    background-color: rgba(255,255,255,0.7);
+    display: flex;
+    padding: 1rem;
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+
+.td-1{
+    align-items: center;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 2rem;
+}
+
+.td-2{
+    align-items: center;
+    text-align: center;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    
+}
+
+.td-r{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.q1{
+    width: 15%;
+}
+
+.f1{
+    align-items: center;
+    text-align: center;
+    width: auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .sec-cont{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+.sec-cont-fact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(114, 65, 0, 0.393);
+    height: 100vh;
+
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 200px;
+}
+
+.dropdown .dropdown-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.dropdown .dropdown-btn i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff   ;
+}
+
+.dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.dropdown .dropdown-menu li {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown .dropdown-menu li:hover {
+    background-color: #000000;
+}
+
+.dropdown .dropdown-menu.show {
+    display: block;
+}
+
+.fact-box{
+    background-color: rgba(255,255,255,0.7);
+    display: flex;
+    padding: 1rem;
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+
+.portionbox{
+    text-align: center;
+}
+
+.q2{
+    width: 30%;
+}
+
+.ing-need{
+    display: flex;
+    gap: 0px;
+}
+
+.ing-menu{
+    text-align: center;
+    flex: 1;
+}
+
+.molde{
+    background-color: rgba(255,255,255,0.7);
+    display: flex;
+    padding: 4rem;
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.horno{
+    background-color: rgba(255,255,255,0.7);
+    display: flex;
+    padding: 2rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.factmain{
+    height: 50%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+.galletas{
+    background-color: rgba(255,255,255,0.7);
+    display: flex;
+    padding: 4rem;
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+
+.gear {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #333;
+    overflow: hidden;
+    animation: spin 2s linear infinite;
+}
+
+.tooth {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 8px;
+    height: 40px;
+    margin-left: -4px;
+    background: #999;
+    transform-origin: center bottom;
+    animation: spin 2s linear infinite reverse;
+}
+
+.tooth:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.tooth:nth-child(2) {
+    transform: rotate(90deg);
+}
+
+.tooth:nth-child(3) {
+    transform: rotate(135deg);
+}
+
+.tooth:nth-child(4) {
+    transform: rotate(180deg);
+}
+
+.tooth:nth-child(5) {
+    transform: rotate(225deg);
+}
+
+.tooth:nth-child(6) {
+    transform: rotate(270deg);
+}
+
+.tooth:nth-child(7) {
+    transform: rotate(315deg);
+}
+
+.tooth:nth-child(8) {
+    transform: rotate(360deg);
+}
+
+.shaft {
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    border-radius: 50%;
+    background: #999;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.ingredientesDiv{
+    height: 50%;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 1rem; 
+    padding: 1rem;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preload" href="./styles.css" as="style">
+    <link href="./styles.css" rel="stylesheet">
+
+    <link rel="preload" href="./normalize.css" as="style">
+    <link rel="stylesheet" href="./normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./img/cookie.svg" type="image/x-icon">
+
+
+    <title>CookieFactory</title>
+</head>
+<body>
+    <body>
+        <div class="whole-page">
+            <div class=" main-container">
+                <div class="box1">
+                    <a href="./index.html">
+                        <img src="./img/cookie.svg" class="icon2">
+                    </a>
+                </div>
+                <div class="menu-box">
+                    <a href="./ingredients.html" class="header-links">Ingredientes</a>
+                    <p class="dividers">|</p>
+                    <a href="./formulae.html" class="header-links">Recetas</a>
+                    <p class="dividers">|</p>
+                    <a href="./simulation.html" class="header-links">Fábrica</a>
+                </div> 
+            </div>
+            <div class="sec-cont">
+                <div class="box ing-inv">
+                    <div class="box-content">
+                        <p class="text-ing">Recetas de Preparación</p>
+                        <div class="secondarybox-bg-2">
+                            <div id="rec-table-container">
+                                <table class="tablarecetas">
+                                    <thead>
+                                        <th class="td-2">Ingredientes</th>
+                                        <th class="td-1">Cantidad</th>
+                                    </thead>
+                                    <tbody id="place-rec-table"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <a class="sec-buttons"></a>
+                    </div>
+                </div>
+                <div class="box ing-add">
+                    <div class="box-content">
+                        <p class="text-ing">Agregar Receta</p>
+                        <div class="secondarybox-bg-2">
+                            <form name="rec-form" method="POST" action="/save" class="f1">
+                                <label for="recipes">Nombre: </label>
+                                <input type="text" id="nomRecipes" name="nomRecipes" placeholder="Ej. 'Galletas de Chocolate'">
+                                <br><br>
+                                <label for="ingredient">Ingrediente:</label>
+                                <input type="text" id="ingredient" name="ingredient" placeholder="Nombre del Ingrediente">
+                                <input type="number" id="quantity" name="quantity" value="0" min="0" class="q1">
+                            </form>
+                            <button class="sec-buttons" type="button" id="addIngtoRec">Agregar Receta</button>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="./formulae.js"></script>
+</html>
